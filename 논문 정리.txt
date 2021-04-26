@@ -1,0 +1,12 @@
+- 과거의 사례들을 통해서 ML을 사용하는 것이 효과적이라는 것이 밝혀졌으나 
+feature extraction을 hand-craft 방식으로 해야 하는
+어려움이 있어 DL로 하는 것이 이런 수고를 덜어주기 때문에 더 낫다고 판단하였다.
+
+- 2D CNN을 적용하면 tunable parameter(matrix) -> matrix operation
+때문에 높은 계산 성능이 요구되지만 
+- 1D CNN은 weight parameter의 절대적인 양이 감소하므로 training 효율성을 증대시키고,
+계산 복잡도를 감소시킨다. -> 학습 시 편하다.
+
+- 과거의 사례들을 참고하여 1D CNN이 빠르고 정확하게 arrhythmia를 분류하였기 때문에 이를 사용하였다.
+- 1D CNN technique is useful to extract features of time sequence data
+
